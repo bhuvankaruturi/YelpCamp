@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+<div class="container">
+    <form class="form-signin text-center" style="width:30%; margin:15% auto;" action="/login" method="POST">
+      <!--<img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+      <h1 class="form-heading pb-3">Please Sign in</h1>
+      <div class="form-group">
+          <label for="username" class="sr-only">Username</label>
+          <input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="password" required>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+</div>   
+<% include ../partials/footer %>

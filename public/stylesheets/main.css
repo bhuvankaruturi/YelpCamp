@@ -1,0 +1,37 @@
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
+
+body {
+  padding-top: 4rem;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+}
+
+
+.form-heading {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline;
+}
+
+.pad-btm {
+    margin-bottom: 1.0rem;
+}
+
+
+#edit-delete-div {
+    padding-bottom: 10px;
+}
+
+#comments {
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+}
