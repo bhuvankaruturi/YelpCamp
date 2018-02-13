@@ -13,7 +13,7 @@ var commentRoutes       = require("./routes/comments");
 var indexRoutes         = require("./routes/index");
 var middlewareObj       = require("./middleware/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds141657.mlab.com:41657/yelpcamp");
 
 var app = express();
 app.set("view engine", "ejs");
