@@ -2,16 +2,16 @@
 <div class="container text-center">
     <div style="margin: 10% auto;">
     <h1 class="form-heading">Welcome! Please Singup Here</h1>
-        <div style="width: 30%; margin: 5% auto;">
-            <form class="form-signin" action="/register" method="POST">
+        <div class="row justify-content-md-center" style="margin: 5% auto;">
+            <form class="form-signin col-lg-4 col-md-6 col-sm-10" action="/register" method="POST">
               <!--<img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
                 <div class="form-group">
                   <label for="username" class="sr-only">Username</label>
-                  <input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
+                  <input type="text" class="form-control" placeholder="Username" name="username" required autofocus maxlength="15">
                 </div>
                 <div class="form-group">
                   <label for="inputPassword" class="sr-only">Password</label>
-                  <input type="password" class="form-control" placeholder="Password" name="password" required>
+                  <input type="password" class="form-control" placeholder="Password" name="password" required maxlength="15">
                  </div>
                  <div class="form-group">
                   <button class="btn btn-lg btn-primary btn-block" type="submit">Signup</button>

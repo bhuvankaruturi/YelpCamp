@@ -57,14 +57,14 @@
                         <% }) %>
                         <% if(currentUser){ %>
                         <div class="list-group-item flex-column pb-0">
-                            <form class="form-row" action="/campgrounds/<%= campground._id %>/comments" method="POST">
-                            <div class="col-10 form-group">
-                                <input class="form-control" type="text" name="comment[text]" placeholder="Add a comment">
-                            </div>
-                            <div class="col-2 form-group">
-                                <button class="btn btn btn-primary btn-block">Comment</button>
-                            </div>
-                            </form>
+                                <form class="form-row" action="/campgrounds/<%= campground._id %>/comments" method="POST">
+                                <div class="col-sm-9 form-group">
+                                    <input class="form-control" type="text" name="comment[text]" placeholder="Add a comment">
+                                </div>
+                                <div class="col-sm-3 text-right form-group">
+                                    <button class="btn btn btn-primary btn-block">Comment</button>
+                                </div>
+                                </form>
                         </div>
                         <% } %>
                     </div>
