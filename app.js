@@ -13,7 +13,7 @@ var commentRoutes       = require("./routes/comments");
 var indexRoutes         = require("./routes/index");
 var middlewareObj       = require("./middleware/index");
 
-mongoose.connect("mongodb://bkarutur:airoliA950@ds141657.mlab.com:41657/yelpcamp");
+mongoose.connect(process.env.DATABASEURL);
 
 var app = express();
 app.set("view engine", "ejs");
@@ -50,5 +50,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/", indexRoutes);
 
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("The YelpCamp v11 server has started");
+    console.log("The YelpCamp deploy_v11 server has started");
 });
