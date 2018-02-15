@@ -1,2 +1,2 @@
 # YelpCamp
-A responsive website designed with Node, Express, MongoDB
+A responsive website developed with Node, Express and MongoDB
