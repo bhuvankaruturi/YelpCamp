@@ -69,7 +69,22 @@ middlewareObj.getDaysDifference = function(date){
     var today = new Date();
     var timeDiff = Math.abs(today.getTime() - date.getTime());
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-    return diffDays - 1;
-}
+    diffDays -= 1;
+    if(diffDays <= 7){
+        return diffDays === 1 ? diffDays + " day ago" : diffDays + " days ago";
+    }
+    else if (diffDays > 7 && diffDays < 31) {
+        diffDays = Math.floor(diffDays/7);
+        return diffDays === 1 ? diffDays + " week ago" : diffDays + " weeks ago";
+    }
+    else if(diffDays > 31 && diffDays < 366) {
+        diffDays = Math.floor(diffDays/30.5);
+        return diffDays === 1 ? diffDays + " month ago" : diffDays + " months ago";
+    }
+    else {
+        diffDays = Math.floor(diffDays/365.5);
+        return diffDays === 1 ? diffDays + " year ago" : diffDays + " years ago";
+    }
+};
 
 module.exports = middlewareObj;

@@ -44,7 +44,7 @@
                             <div class="list-group-item flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
                                   <h5 class="mb-1"><%=comment.author.username%></h5>
-                                  <small><%=getDaysDifference(comment.createdOn)%> days ago</small>
+                                  <small><%=getDaysDifference(comment.createdOn)%></small>
                                 </div>
                                 <p class="mb-0"><%=comment.text%></p>
                                 <% if(currentUser && comment.author.id.equals(currentUser._id)) { %>
